@@ -8,12 +8,12 @@ async function bootstrap() {
     {
       transport: Transport.TCP,
       options: {
-        host: '127.0.0.1',
-        port: 7000,
+        host: '0.0.0.0',
+        port: 3005,
       },
     },
   );
   await app.listen();
-  console.log('AUDIT SERVICE is running on: http://localhost:7000');
+  console.log('AUDIT SERVICE is running on: http://localhost:3005');
 }
 bootstrap();

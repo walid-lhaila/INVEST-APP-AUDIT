@@ -15,8 +15,8 @@ import { ConfigModule } from '@nestjs/config';
         name: 'Audit-Service',
         transport: Transport.TCP,
         options: {
-          host: '127.0.0.1',
-          port: 7000,
+          host: '0.0.0.0',
+          port: 3005,
         },
       },
     ]),
